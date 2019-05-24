@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './Components/indexPage.css'
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
         >
           Learn React
         </a>
+        <div>
+
+
+        </div>
       </header>
     </div>
   );
