@@ -34,8 +34,7 @@ import { useAlert } from 'react-alert'
 import StatusAlert, { StatusAlertService } from 'react-status-alert'
 import 'react-status-alert/dist/status-alert.css'
 import '../Components/Login.css'
-import ChefHat from '../assets/images/images/ChefHat.png'
-import Cheese from '../assets/images/images/Cheese.png'
+import blueCircle from '../assets/images/images/circle_sparkle.png'
 
 
 
@@ -182,14 +181,15 @@ class Login extends Component {
 <div onLoad={this.checking}>
 
                 <StatusAlert /> 
-            <img src={ChefHat} style={{width:'87%' , marginTop:'45%' , marginLeft:'4%'}}/>
+                <img src={blueCircle} className={'MainImage'}/>
 
+            <h1 className='lgnText'>My Menu</h1>
             
                 <div style={{marginTop:'20%'}}>
                     <Button variant="outlined" color="primary" onClick={this.handleLoginClickOpen} style={{
                         position: 'absolute',
                         bottom: '28%', right: '23%', padding: 10,
-                        borderRadius: 90, backgroundColor: '#F65314', color: 'white'
+                        borderRadius: 90, backgroundColor: '#66d9ff', color: 'white'
                     }}>
                         login
                     </Button>
@@ -202,7 +202,7 @@ class Login extends Component {
                         aria-describedby="alert-dialog-slide-description"
                         style={{ borderRadius: '10%' }}
                     >
-                        <DialogTitle id="alert-dialog-slide-title" style={{ backgroundColor: '#F65314' }}>
+                        <DialogTitle id="alert-dialog-slide-title" style={{ backgroundColor: '#66d9ff' }}>
                             <p style={{ marginLeft: '40%', color: 'white' }}>Login</p>
                         </DialogTitle>
                         <DialogContent style={{ backgroundColor: '#f2f2f2' }}>
@@ -226,7 +226,7 @@ class Login extends Component {
                             />
 
                         </DialogContent>
-                        <div style={{ backgroundColor: 'grey' }}>
+                        <div style={{ backgroundColor: '#bcc5dc' }}>
                             <DialogActions>
                                 <Button onClick={this.handleLoginClose} color="primary">
                                     <p style={{color:'white'}}>Close</p>
@@ -252,7 +252,7 @@ class Login extends Component {
                         <Button variant="outlined" color="primary" onClick={this.handleRegisterClickOpen} style={{
                             position: 'absolute',
                             bottom: '28%', left: 90, padding: 10,
-                            borderRadius: 90, backgroundColor: '#F65314 ', color: 'white'
+                            borderRadius: 90, backgroundColor: '#66d9ff ', color: 'white'
                         }}>
                             Register
                     </Button>
@@ -265,7 +265,7 @@ class Login extends Component {
                             aria-describedby="alert-dialog-slide-description"
                             style={{ borderRadius: '10%' }}
                         >
-                            <DialogTitle id="alert-dialog-slide-title" style={{ backgroundColor: '#F65314' }}>
+                            <DialogTitle id="alert-dialog-slide-title" style={{ backgroundColor: '#66d9ff' }}>
                                 <p style={{ marginLeft: '40%', color: 'white' }}>Register</p>
                             </DialogTitle>
                             <DialogContent style={{ backgroundColor: ' #f2f2f2' }}>
@@ -304,7 +304,7 @@ class Login extends Component {
 
 
                             </DialogContent>
-                            <div style={{ backgroundColor: ' grey' }}>
+                            <div style={{ backgroundColor: ' #bcc5dc' }}>
 
                                 <DialogActions>
                                     <Button onClick={this.handleRegisterClose} color="primary">

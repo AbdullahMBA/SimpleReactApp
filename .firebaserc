@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "firebase-react-deploy": "simplereactui",
+    "default": "simplereactui",
+    "reactstaging": "simplereactui"
+  }
+}

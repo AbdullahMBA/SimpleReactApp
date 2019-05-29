@@ -4,7 +4,7 @@
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
-
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Handlee|ZCOOL+QingKe+HuangYou&display=swap');
   
 @font-face {
   font-family: 'Permanent Marker', cursive;
@@ -433,9 +433,24 @@
   }
 
   body{
-  background: url('../assets/images/images/blackbackgrounds.jpg') no-repeat fixed center; 
-  background-size: cover;
+  background-color:  #DFE3EE;  
+   background-size: cover;
   font-family: 'Permanent Marker', cursive;
   height: 100%;
   margin: 0
+}
+
+.lgnText{
+  position: absolute; 
+  top: 200px; 
+  left: 0; 
+  width: 100%; 
+  text-align: center;
+  color: #DFE3EE;
+}
+
+.MainImage {
+  position: relative; 
+   width: 100%; 
+   margin-top: 10%
 }

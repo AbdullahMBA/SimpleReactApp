@@ -117,6 +117,11 @@ class indexPage extends Component {
 
             <div>
                   <AppContainer />
+                  <br></br>                  <br></br>
+                  <br></br>
+
+                  <br></br>
+
                 <Gallery/>
               
 

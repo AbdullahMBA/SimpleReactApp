@@ -20,7 +20,7 @@ class Gallery extends React.Component {
 
 
 
-      <div >
+     /* <div >
 
        
         {JsonData.map((postDetail, index) => {
@@ -31,11 +31,10 @@ class Gallery extends React.Component {
           <br></br>
 
           <div className="w3-card-4" style={{ width: '95%' }}>
-            <img src={postDetail.image} alt="Alps" style={{ width: '100%' , marginBottom:10 }} />
+            <img src={postDetail.image} alt="Alps" className='card' />
             <br></br>
-              <em style={{color:'white'}}>{postDetail.content}</em>
+              <em   >{postDetail.content}</em>
               <br></br>
-              <p>{postDetail.slug}</p>
             <div className="w3-container w3-center">
              
             </div>
@@ -45,6 +44,32 @@ class Gallery extends React.Component {
           </div>
         })}
 <br></br>
+      </div>*/
+      <div>
+
+      {JsonData.map((postDetail , index) => {
+        return (
+          <div>
+            <br></br>
+          <br></br>
+
+          <br></br>
+        <div className='card'>
+
+        <h1 className='title'>{postDetail.title}</h1>
+
+            <img src={postDetail.image} alt="Alps"  />
+            <div className='container'>
+              
+            <p className='imgContent'> {postDetail.content}</p>
+
+            </div>
+
+        </div>
+        </div>
+        )
+
+      })}
       </div>
     );
   }

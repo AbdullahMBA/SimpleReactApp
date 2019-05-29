@@ -15,21 +15,87 @@ import Switch from '@material-ui/core/Switch';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
-import MenuLogo from '../assets/images/images/menu.svg'
+import MenuLogo from '../assets/images/icons/hamburger.svg'
 
-const styles = {
+
+
+const styles = theme => ({
   root: {
-    flexGrow: 1,
-  },
-  grow: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20,
-  },
-};
+      flexGrow: 1,
+      marginTop: 8,
+      margin: 12
 
+  },
+  divider: {
+      width: '100%',
+  },
+  ButtonSearch: {
+      backgroundColor: '#007bff',
+      color: 'white',
+      '&:hover': {
+          background: '#007bff'
+      }
+  },
+  ButtonLocation: {
+      backgroundColor: '#4CAF50',
+      color: 'white',
+      '&:hover': {
+          background: '#4CAF50'
+      }
+  },
+  ButtonGuide: {
+      backgroundColor: '#74cbc4',
+      color: 'white',
+      '&:hover': {
+          background: '#74cbc4'
+      },
+      margin: theme.spacing.unit,
+      padding: '2px'
+  },
+  tab: {
+      flexGrow: 1,
+      marginTop: 2,
+      backgroundColor: '#f7faea'
+
+  },
+  
+  iocns: {
+      fontSize: 18
+  },
+  ratingContainer: {
+      padding: '2px 4px',
+      display: 'flex',
+      alignItems: 'center',
+      width: 400,
+  },
+  input: {
+      paddingRight: 10,
+      flex: 1,
+  },
+  iconButtonRating: {
+      padding: 10,
+  },
+  divpadding: {
+      padding: '5%'
+  },
+  btn_login: {
+      color: 'white',
+      padding: '10px 1px',
+      border: 'none',
+      cursor: 'pointer',
+      width: '100%',
+      opacity: '0.9',
+      borderRadius: '3px',
+
+  },
+  imgShow: {
+      width: 50,
+      height: 50,
+  }
+
+
+
+});
 class AppContainer extends React.Component {
   state = {
     auth: true,
@@ -79,13 +145,13 @@ class AppContainer extends React.Component {
 
       <div className={classes.root}>
 
-        <AppBar position="static" style={{ backgroundColor: '#F65314' }}>
+    <AppBar position="fixed" style={{backgroundColor:'#66d9ff'}} >
           <FormGroup>
             <FormControlLabel
               control={
                 <Switch checked={auth} onChange={this.handleChange} aria-label="LoginSwitch" />
               }
-              label={auth ? <p style={{ color: 'white' }}>Logout</p> : <Redirect to='/Login/' />}
+              label={auth ? <p style={{ color: 'white' }}>Logout</p> : <Redirect to='/Login/' /> }
             />
           </FormGroup>
           <Toolbar>

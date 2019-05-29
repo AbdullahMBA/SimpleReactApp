@@ -7,6 +7,7 @@ import indexPage from './Components/indexPage';
 import Gallery from './Components/Gallery'
 
 
+
 const AppRouter = () => (
 
         <BrowserRouter>
